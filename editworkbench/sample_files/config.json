@@ -1,0 +1,6 @@
+{
+  "app": "EditWorkbench",
+  "version": "2.0",
+  "theme": "wine-red",
+  "features": ["editor", "preview", "search"]
+}

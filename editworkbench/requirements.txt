@@ -1,0 +1,5 @@
+PyQt5>=5.15
+PyQtWebEngine>=5.15
+python-docx>=0.8
+openpyxl>=3.0
+python-pptx>=0.6
