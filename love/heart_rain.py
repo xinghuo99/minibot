@@ -12,10 +12,10 @@ class HeartParticle:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.size = random.uniform(8, 20)
+        self.size = random.uniform(16, 66)
         self.speed_y = random.uniform(1.5, 4.0)
         self.speed_x = random.uniform(-1.0, 1.0)
-        self.opacity = 1.0
+        self.opacity = 2.0 # old value 1.0
         self.wobble_phase = random.uniform(0, math.pi * 2)
         self.wobble_amp = random.uniform(0.3, 1.2)
 
@@ -66,7 +66,7 @@ class _HeartOverlay(QWidget):
         painter.setPen(Qt.NoPen)
         for p in self.particles:
             a = max(0, min(255, int(p.opacity * 255)))
-            painter.setBrush(QBrush(QColor(255, 50, 50, a)))
+            painter.setBrush(QBrush(QColor(255, 0, 0, 255)))
             painter.drawPath(self._heart_path(p.x, p.y, p.size))
         painter.end()
 
