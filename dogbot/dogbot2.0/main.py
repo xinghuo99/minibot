@@ -85,7 +85,7 @@ def main():
     tray_menu.addAction(quit_action)
 
     tray.setContextMenu(tray_menu)
-    tray.setToolTip("桌面宠物 - CTRL 唤醒/隐藏, SHIFT 钉住/解除")
+    tray.setToolTip("桌面宠物 - CTRL 唤醒/隐藏, SHIFT 圈养/放养")
     tray.show()
 
     tray.activated.connect(lambda reason: pet.show() if reason == QSystemTrayIcon.DoubleClick else None)
@@ -99,7 +99,7 @@ def main():
     # ── 运行 ────────────────────────────────────────────────
     print("[桌面宠物] 已启动！")
     print("[桌面宠物] 按 CTRL 唤醒/隐藏宠物")
-    print("[桌面宠物] 按 SHIFT 钉住/解除钉住（宠物可见时）")
+    print("[桌面宠物] 按 SHIFT 圈养/放养（宠物可见时）")
     print("[桌面宠物] 右键宠物 → 关闭 / 切换风格")
     print("[桌面宠物] 左键单击 → 互动动画")
     print("[桌面宠物] 鼠标悬停 → 摇摆动画")
